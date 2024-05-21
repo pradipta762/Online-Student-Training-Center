@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD Teaching | A Student Training Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" href="../output.css">
+</head>
+<body>
+    <header>
+        <nav class="bg-clr-primary">
+            <div class="container flex items-center justify-between h-16">
+                <div id="logo" class="font-semibold text-2xl"><span class="text-clr-accecent font-bold text-3xl">PD </span>Teaching</div>
+                <div id="nav-links" class="hidden sm:flex gap-6 h-full items-center">
+                    <a class="text-xl font-semibold text-clr-accecent" href="#">Home</a>
+                    <a class="text-xl font-semibold" href="#">About</a>
+                    <a class="text-xl font-semibold" href="#">Contact</a>
+                </div>
+                <i class="fa-solid fa-bars text-xl sm:hidden cursor-pointer" onclick="handelMenu()"></i>
+            </div>
+            <div id="nav-dialog" class="inset-0 h-screen fixed bg-clr-primary hidden sm:hidden">
+                <div id="mob-nav" class="container flex items-center justify-between h-16 border-b-2 border-clr-accecent">
+                    <div id="logo" class="font-semibold text-2xl"><span class="text-clr-accecent font-bold text-3xl">PD </span>Teaching</div>
+                    <i class="fa-solid fa-xmark text-xl sm:hidden cursor-pointer" onclick="handelMenu()"></i>
+                </div>
+                <div id="mob-nav-links" class="flex flex-col p-4 gap-4">
+                    <a class="text-xl font-semibold text-clr-accecent" href="#">Home</a>
+                    <a class="text-xl font-semibold" href="#">About</a>
+                    <a class="text-xl font-semibold" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero Section -->
+
+        <section class="bg-hero-bg bg-cover bg-center h-screen">
+            <div class="container h-full">
+                <div class="content-wrapper h-full md:px-28 text-white text-center px-5 flex flex-col items-center justify-center">
+                    <h1 class="text-5xl md:text-[5rem] md:mb-8 font-bold mb-6">Develop your mind and skills</h1>
+                    <h2 class="uppercase font-semibold text-2xl md:text-3xl mb-6 tracking-widest">More than 1200 online courses</h2>
+                    <p class="text-xl md:px-10 mb-6">Want to get professional knowledge in the fast developing IT sphere? Pract offers a wide variety of online courses for everyone willing to enter the world of information technologies.</p>
+                    <div class="flex md:gap-4 gap-6 flex-col md:flex-row">
+                        <button class="uppercase text-clr-text bg-clr-accecent px-6 py-2 rounded-full font-semibold tracking-widest">Design</button>
+                        <button class="uppercase text-clr-text bg-clr-accecent px-6 py-2 rounded-full font-semibold tracking-widest">Programming</button>
+                        <button class="uppercase text-clr-text bg-clr-accecent px-6 py-2 rounded-full font-semibold tracking-widest">Marrketing</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+
+        <section>
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="flex flex-col md:flex-row gap-4 mb-8">
+                        <img class="h-[450px] w-[500px] object-cover object-center" src="../../img/img-02.jpeg" alt="">
+                        <div class="sm:p-8 sm:pr-14">
+                            <h2 class="text-4xl sm:text-5xl font-bold mb-4">A few words about</h2>
+                            <h3 class="text-xl sm:text-2xl font-semibold mb-4">Sample Headline</h3>
+                            <p class="text-lg text-justify">Article evident arrived express highest men did boy. Mistress sensible entirely arrived am so. Quick can manor smart money arrived hopes worth arrived too. Comfort produce husband arrived boy her had hearing. Quick can manor smart money arrived hopes worth arrived too Law others theirs passed but wishes. You day real less till dear read. Quick can manor smart money arrived hopes worth arrived too Considered use dispatched melancholy sympathize discretion led. Oh feel if up to till like.</p>
+                        </div>
+                    </div>
+                    <p class="text-xl">He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is ye. Ignorant formerly so ye blessing. He as spoke avoid given downs money on we. Of properly carriage shutters ye as wandered up repeated moreover.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section>
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="grid res-grid gap-4">
+                        <div class="flex flex-col gap-4 hover:shadow-lg cursor-pointer transition-all border p-8 rounded-xl">
+                            <i class="fa-solid fa-people-group text-6xl" style="color: #f1c50e;"></i>
+                            <h3 class="text-2xl font-semibold">Best industry leaders</h3>
+                            <p>Pract involves the best industry leaders, who share their experience, knowledge and tips with our students.</p>
+                        </div>
+                        <div class="flex flex-col gap-4 hover:shadow-lg cursor-pointer transition-all border p-8 rounded-xl">
+                            <i class="fa-solid fa-person-chalkboard text-6xl" style="color: #f1c50e;"></i>
+                            <h3 class="text-2xl font-semibold">Best teachers</h3>
+                            <p>Our staff consists of professional experienced teachers, who love what they do and use creative approach in teaching.</p>
+                        </div>
+                        <div class="flex flex-col gap-4 hover:shadow-lg cursor-pointer transition-all border p-8 rounded-xl">
+                            <i class="fa-solid fa-award text-6xl" style="color: #f1c50e;"></i>
+                            <h3 class="text-2xl font-semibold">National Award</h3>
+                            <p>PD Teachings takes part in many IT educational contests. We won the National IT progress Award 3 times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section class="bg-clr-secondary">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h2 class="text-center mb-8 text-3xl sm:text-5xl font-bold">English Without Rules. <br> Start Speaking Properly!</h2>
+                    <div id="card-wrapper" class="grid card-res-grid gap-4">
+                        <div id="card" class="border p-6 bg-clr-primary">
+                            <img class="max-h-[250px] w-full object-cover object-center mb-4" src="../../img/img-03.jpeg" alt="books on a wooden table">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-4">Statements</h3>
+                                <p>Sample text. Click to select the text box. Click again. Odio euismod lacinia at quis risus sed vulputate odio. Ac turpis egestas maecenas pharetra.</p>
+                            </div>
+                        </div>
+                        <div id="card" class="border p-6 bg-clr-primary">
+                            <img class="max-h-[250px] w-full object-cover object-center mb-4" src="../../img/img-02.jpeg" alt="books on a wooden table">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-4">Infinitive</h3>
+                                <p>Sample text. Click to select the text box. Click again. Odio euismod lacinia at quis risus sed vulputate odio. Ac turpis egestas maecenas pharetra.</p>
+                            </div>
+                        </div>
+                        <div id="card" class="border p-6 bg-clr-primary">
+                            <img class="max-h-[250px] w-full object-cover object-center mb-4" src="../../img/img-04.jpeg" alt="books on a wooden table">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-4">Free Lessons</h3>
+                                <p>Sample text. Click to select the text box. Click again. Odio euismod lacinia at quis risus sed vulputate odio. Ac turpis egestas maecenas pharetra.</p>
+                            </div>
+                        </div>
+                        <div id="card" class="border p-6 bg-clr-primary">
+                            <img class="max-h-[250px] w-full object-cover object-center mb-4" src="../../img/img-05.jpeg" alt="books on a wooden table">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-4">Vocabulary</h3>
+                                <p>Sample text. Click to select the text box. Click again. Odio euismod lacinia at quis risus sed vulputate odio. Ac turpis egestas maecenas pharetra.</p>
+                            </div>
+                        </div>
+                        <div id="card" class="border p-6 bg-clr-primary">
+                            <img class="max-h-[250px] w-full object-cover object-center mb-4" src="../../img/img-06.jpeg" alt="books on a wooden table">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-4">Best Team</h3>
+                                <p>Sample text. Click to select the text box. Click again. Odio euismod lacinia at quis risus sed vulputate odio. Ac turpis egestas maecenas pharetra.</p>
+                            </div>
+                        </div>
+                        <div id="card" class="border p-6 bg-clr-primary">
+                            <img class="max-h-[250px] w-full object-cover object-center mb-4" src="../../img/img-07.jpeg" alt="books on a wooden table">
+                            <div>
+                                <h3 class="text-2xl font-semibold mb-4">24/7 Support</h3>
+                                <p>Sample text. Click to select the text box. Click again. Odio euismod lacinia at quis risus sed vulputate odio. Ac turpis egestas maecenas pharetra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Counter Section -->
+        <section>
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="flex flex-col md:flex-row items-center gap-10">
+                        <div class="bg-clr-accecent p-10 text-clr-primary">
+                            <img class="mb-6 max-h-[350px] w-full object-cover object-center" src="../../img/img-01.jpeg" alt="">
+                            <div class="flex flex-col gap-6">
+                                <h2 class="text-5xl font-bold">A Few Words About</h2>
+                                <p class="text-lg">Every member of team believes strongly in the empowering power of knowledge. And we aim to share our knowledge with everyone willing to learn.</p>
+                                <i class="fa-solid fa-arrow-right-long text-6xl"></i>
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 md:grid-rows-2 gap-12">
+                            <div class="text-center flex flex-col gap-6">
+                                <span class="text-clr-accecent text-6xl font-bold">8.827</span>
+                                <h3 class="uppercase tracking-[0.2rem] font-medium">Satisfied students</h3>
+                                <p class="font-xl">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                            </div>
+                            <div class="text-center flex flex-col gap-6">
+                                <span class="text-clr-accecent text-6xl font-bold">$650</span>
+                                <h3 class="uppercase tracking-[0.2rem] font-medium">Available courses</h3>
+                                <p class="font-xl">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                            </div>
+                            <div class="text-center flex flex-col gap-6">
+                                <span class="text-clr-accecent text-6xl font-bold">219.844</span>
+                                <h3 class="uppercase tracking-[0.2rem] font-medium">Graduates</h3>
+                                <p class="font-xl">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                            </div>
+                            <div class="text-center flex flex-col gap-6">
+                                <span class="text-clr-accecent text-6xl font-bold">only 10</span>
+                                <h3 class="uppercase tracking-[0.2rem] font-medium">Best teachers</h3>
+                                <p class="font-xl">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Section -->
+        <section>
+            <div class="container bg-clr-secondary">
+                <div class="content-wrapper">
+                    <div class="px-8 grid res-grid gap-6">
+                        <div>
+                            <h2 class="text-2xl font-semibold border-b-2 border-clr-accecent mb-6 pb-4">Web Development</h2>
+                            <ul class="list-disc px-6">
+                                <li class="text-lg mb-4">Learn and Understand Angular JS</li>
+                                <li class="text-lg mb-4">JavaScript: Understanding the Weird Parts</li>
+                                <li class="text-lg mb-4">Webpack 2: The Complete Developers Guide</li>
+                                <li class="text-lg mb-4">Build Responsive Real World Websites with HTML5 and CSS3</li>
+                                <li class="text-lg mb-4">ES6 Javascript: The Complete Developer’s Guide</li>
+                                <li class="text-lg mb-4">The Web Developer Bootcamp</li>
+                                <li class="text-lg mb-4">Full JavaScript Course: From Scratch to Results</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold border-b-2 border-clr-accecent mb-6 pb-4">Information Technology</h2>
+                            <ul class="list-disc px-6">
+                                <li class="text-lg mb-4">Cybersecurity</li>
+                                <li class="text-lg mb-4">Managing Risks The Complete Cybersecurity Course </li>
+                                <li class="text-lg mb-4">Learn Ethical Hacking From Scratch</li>
+                                <li class="text-lg mb-4">The Complete Networking</li>
+                                <li class="text-lg mb-4">Fundamentals Course</li>
+                                <li class="text-lg mb-4">Your CCNA start Linux: SSH to remote server</li>
+                                <li class="text-lg mb-4">Networking basics for DevOps</li>
+                                <li class="text-lg mb-4">Build automated speech systems with Azure Cognitive Services</li>
+                                <li class="text-lg mb-4">Overview of Data Visualization</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-semibold border-b-2 border-clr-accecent mb-6 pb-4">Web Design</h2>
+                            <ul class="list-disc px-6">
+                                <li class="text-lg mb-4">Build a Full Website using WordPress</li>
+                                <li class="text-lg mb-4">Visual Elements of User Interface Design</li>
+                                <li class="text-lg mb-4">Foundations of User Experience Design</li>
+                                <li class="text-lg mb-4">Web Design for Everybody</li>
+                                <li class="text-lg mb-4">Basics of Web Development & Coding</li>
+                                <li class="text-lg mb-4">Design Principles an Introduction</li>
+                                <li class="text-lg mb-4">Responsive Website Development and Design</li>
+                                <li class="text-lg mb-4">Web Design: Strategy and Information Architecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="pt-10">
+            <div class="container">
+                <div class="content-wrapper">
+                    <h2 class="text-center font-normal text-5xl mb-12">Meet Our Team</h2>
+                    <div class="grid res-grid gap-4">
+                        <div class="p-6 border border-gray-200 rounded-3xl shadow-xl bg-clr-primary text-center flex flex-col justify-center items-center">
+                            <div id="img-container" class="mb-8 border-[12px] border-clr-accecent rounded-full w-max">
+                                <img class="rounded-full h-48 w-48 object-cover object-center" src="../../img/faculty-01.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="font-normal text-3xl mb-8">Alex Smith</h3>
+                                <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <div class="flex gap-4 justify-center">
+                                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                                    <i class="fa-brands fa-twitter text-xl"></i>
+                                    <i class="fa-brands fa-instagram text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-3xl shadow-xl bg-clr-primary text-center flex flex-col justify-center items-center">
+                            <div id="img-container" class="mb-8 border-[12px] border-clr-accecent rounded-full w-max">
+                                <img class="rounded-full h-48 w-48 object-cover object-center" src="../../img/faculty-02.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="font-normal text-3xl mb-8">Alex Smith</h3>
+                                <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <div class="flex gap-4 justify-center">
+                                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                                    <i class="fa-brands fa-twitter text-xl"></i>
+                                    <i class="fa-brands fa-instagram text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-3xl shadow-xl bg-clr-primary text-center flex flex-col justify-center items-center">
+                            <div id="img-container" class="mb-8 border-[12px] border-clr-accecent rounded-full w-max">
+                                <img class="rounded-full h-48 w-48 object-cover object-center" src="../../img/faculty-03.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="font-normal text-3xl mb-8">Alex Smith</h3>
+                                <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <div class="flex gap-4 justify-center">
+                                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                                    <i class="fa-brands fa-twitter text-xl"></i>
+                                    <i class="fa-brands fa-instagram text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6 border border-gray-200 rounded-3xl shadow-xl bg-clr-primary text-center flex flex-col justify-center items-center">
+                            <div id="img-container" class="mb-8 border-[12px] border-clr-accecent rounded-full w-max">
+                                <img class="rounded-full h-48 w-48 object-cover object-center" src="../../img/faculty-04.jpg" alt="">
+                            </div>
+                            <div>
+                                <h3 class="font-normal text-3xl mb-8">Alex Smith</h3>
+                                <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                                <div class="flex gap-4 justify-center">
+                                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                                    <i class="fa-brands fa-twitter text-xl"></i>
+                                    <i class="fa-brands fa-instagram text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section>
+            <div class="container">
+                <div class="content-wrapper">
+                    <div id="slider" class="flex flex-col md:flex-row items-center justify-center md:gap-8 gap-4">
+                        <img class="w-96 object-cover object-center" src="../../img/student-01.jpg" alt="picture of a man smiling in a black and white photo">
+                        <div class="flex flex-col gap-6 items-start">
+                            <h3 class="font-semibold text-4xl">John Jackson, <span class="italic font-normal">designer</span></h3>
+                            <p class="text-lg">There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed.</p>
+                            <button class="bg-clr-accecent px-6 py-3 text-lg">Read More</button>
+                        </div>
+                    </div>
+                    <div id="slider" class="flex flex-col md:flex-row items-center justify-center md:gap-8 gap-4">
+                        <img class="w-96 object-cover object-center" src="../../img/student-01.jpg" alt="picture of a man smiling in a black and white photo">
+                        <div class="flex flex-col gap-6 items-start">
+                            <h3 class="font-semibold text-4xl">John Jackson, <span class="italic font-normal">designer</span></h3>
+                            <p class="text-lg">There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed.</p>
+                            <button class="bg-clr-accecent px-6 py-3 text-lg">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section>
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="grid res-grid gap-6">
+                        <div id="contact-form" class="bg-clr-accecent flex flex-col py-10 px-8">
+                            <form action="#" class="flex flex-col gap-4">
+                                <input class="bg-transparent border-b-2 border-black placeholder:text-gray-500 placeholder:text-base py-3 px-2 outline-none" type="text" placeholder="Enter your Name" autocomplete="off">
+                                <input class="bg-transparent border-b-2 border-black placeholder:text-gray-500 placeholder:text-base py-3 px-2 outline-none" type="email" placeholder="Enter a valid email address" autocomplete="off">
+                                <input class="bg-transparent border-b-2 border-black placeholder:text-gray-500 placeholder:text-base py-3 px-2 outline-none" type="phone" placeholder="Enter your phone (e.g. +91 9876543210)">
+                                <textarea class="bg-transparent border-b-2 border-black placeholder:text-gray-500 placeholder:text-base py-3 px-2 outline-none" name="message" id="message" placeholder="Enter your message" cols="20" rows="6"></textarea>
+                                <button class="bg-clr-primary py-3 text-lg uppercase tracking-widest">Submit</button>
+                            </form>
+                        </div>
+                        <div id="contact-details" class="py-10 flex flex-col gap-6">
+                            <div>
+                                <h3 class="text-clr-accecent font-semibold mb-6 text-2xl">Call Us</h3>
+                                <p>+91 8762-908-876</p>
+                                <p>+91 6762-408-886</p>
+                            </div>
+                            <div>
+                                <h3 class="text-clr-accecent font-semibold mb-6 text-2xl">Location</h3>
+                                <p>121 Rock Sreet, 21 Avenue,
+                                    New York, NY 92103-9000 </p>
+                            </div>
+                            <div>
+                                <h3 class="text-clr-accecent font-semibold mb-6 text-2xl">Top Services</h3>
+                                <p class="mb-1">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Pre Design</span>
+                                </p>
+                                <p class="mb-1">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Schematic Design</span>
+                                </p>
+                                <p class="mb-1">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Design Development</span>
+                                </p>
+                                <p class="mb-1">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Engineering Consultants</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div id="contact-img" class="h-full w-full">
+                            <img class="h-full object-cover object-center" src="../../img/img-07.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="bg-gray-800 text-center py-4">
+            <h4 class="text-xl text-clr-primary">Developed with 💛 by <span class="text-semibold">PD</span></h4>
+        </footer>
+
+
+    </main>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</body>
+</html>
